@@ -61,3 +61,18 @@ VkImageViewCreateInfo vkinit::imageview_create_info(VkFormat format, VkImage ima
 
     return info;
 }
+
+VkRenderingInfo vkinit::rendering_info(VkExtent2D renderExtent, VkRenderingAttachmentInfo *colorAttachment, VkRenderingAttachmentInfo *depthAttachment){
+    VkRenderingInfo renderInfo{};
+    renderInfo.sType = VK_STRUCTURE_TYPE_RENDERING_INFO;
+    renderInfo.pNext = nullptr;
+
+    renderInfo.renderArea = VkRect2D { { 0,0 }, renderExtent };
+    renderInfo.layerCount = 1;
+    renderInfo.colorAttachmentCount = colorAttachment ? 1 : 0;
+    renderInfo.pColorAttachments = colorAttachment;
+    renderInfo.pDepthAttachment = depthAttachment;
+    renderInfo.pStencilAttachment = nullptr;
+
+    return renderInfo;
+}
