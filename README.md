@@ -1,4 +1,4 @@
-Following the vkguide
+Following the official vkguide
 
 Current progression:
 2.4 - Setting up IMGUI
