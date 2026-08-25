@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Mus/Programmering/VulkanEngine/build/cmake_install.cmake",
+		"C:/Users/Mus/Programmering/VulkanEngine/build/third_party/cmake_install.cmake",
+		"C:/Users/Mus/Programmering/VulkanEngine/build/third_party/fastgltf/cmake_install.cmake",
+		"C:/Users/Mus/Programmering/VulkanEngine/build/third_party/fmt/cmake_install.cmake",
+		"C:/Users/Mus/Programmering/VulkanEngine/build/third_party/SDL/cmake_install.cmake",
+		"C:/Users/Mus/Programmering/VulkanEngine/build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
